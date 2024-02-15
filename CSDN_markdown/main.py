@@ -59,7 +59,7 @@ def alter_zoom(s):  # 处理 typora 中用 zoom 属性修改过大小的图片
             3) + f'width="{new_w}" height="{new_h}"' + s.group(5)
 
 
-file_name = "Unity 编辑器开发之编辑器拓展4 —— EditorGUIUtility.md"
+file_name = "Temp.md"
 with open("./in/" + file_name, "r", encoding="utf-8") as fin, open("./out/" + file_name, "w",
                                                                    encoding="utf-8") as fout:
     pattern = re.compile(r"(!\[image-\d+]\()(.+)(\))")  # 未修改大小的图片的匹配规则
